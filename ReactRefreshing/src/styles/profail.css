@@ -1,0 +1,16 @@
+.active{
+    color: brown;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: blanchedalmond;
+    font-size: larger;
+    border: 5px solid #4c7d11;
+    border-radius: 10px;
+}
+.notActive{
+    color: rgb(11, 1, 1);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: rgb(172, 71, 112);
+    font-size: larger;
+    border: 5px solid #2c0101;
+    border-radius: 4px;
+}

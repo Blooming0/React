@@ -1,34 +1,30 @@
+/* eslint-disable no-unused-vars */
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-
+import Header from './components/Header'
+import Post from './components/Post'
+import Tags from './components/Tags'
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+   <>
+   <div>
+      <Header/>
+      <div className='w-full flex justify-center gap-5 mt-6'>
+        <div className=''>
+          <Post/>
+          <Post/>
+          <Post/>
+          <Post/>
+        </div>
+        <div className=' '>
+          <Tags/>
+        </div>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+      
+      
+   </div>
+   
+   </>
   )
 }
 
